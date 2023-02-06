@@ -26,7 +26,7 @@ void setup() {
 void loop() {
   float x = (float)(analogRead(JX)-512) / 512.0;
   float y = (float)(analogRead(JY)-512) / 512.0;
-  update_motors(y, x);
+  update_motors(-y, x);
 }
 
 void update_motors(float fwd, float trn) {
